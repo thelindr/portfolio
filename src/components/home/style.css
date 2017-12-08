@@ -1,0 +1,98 @@
+.home {
+  width: 100%;
+  height: 100vh;
+}
+
+.home a {
+  margin: 0px;
+  margin-top: 20%;
+  color: #0f2581;
+  font-family: Calibri;
+  font-size: 40px;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.home .Hero {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home .firstColumn {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  width: 450px;
+  height: 450px;
+  background-image: url("/1639271_therese_lindroth_foto_ekaterina_lukoshkova_1_970.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  border-radius: 50%;
+  transition:
+    width 1s ease-in-out,
+    height 1s ease-in-out,
+    border-radius 0.1s ease-in;
+}
+
+.home .secondColumn {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #247339;;
+  opacity: 1;
+  border-radius: 50%;
+  transition:
+    width 1s ease-in-out,
+    height 1s ease-in-out;
+}
+
+.home .secondColumn a {
+  color: #f3aea1;
+}
+
+.home .About {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ffc107;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition:
+    width 1s ease-in-out,
+    height 1s ease-in-out,
+    border-radius 1s ease-in-out;
+}
+
+.home .About a {
+  color: red;
+}
+
+.home .About p {
+  visibility: hidden;
+}
+
+.home .firstColumn:hover {
+  opacity: 1;
+  width: 600px;
+  height: 800px;
+  border-radius: 0%;
+}
+.home .secondColumn:hover {
+  opacity: 1;
+  width: 600px;
+  height: 600px;
+}
+.home .About:hover {
+  width: 200px;
+  height: 500px;
+  border-radius: 50% 50% 0% 0%;
+}

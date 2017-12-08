@@ -1,11 +1,16 @@
 import React from "react"
+import Home from "./home"
+import About from "./about"
+import Projects from "./projects"
 
 class App extends React.Component {
 
   render() {
     return (
       <div>
-        Find me in src/app.js!
+        <Home />
+      {/* <Works />
+      <About /> */}
       </div>
     )
   }
