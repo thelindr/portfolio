@@ -17,7 +17,6 @@ class Home extends React.Component {
             </div>
             <div className="About">
               <a><Link to="/about">About</Link></a>
-              <p>Textile Artist learning to code for the web</p>
               <Route path="/about" component={About} />
             </div>
             <div className="secondColumn">

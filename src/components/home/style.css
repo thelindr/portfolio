@@ -31,12 +31,11 @@
   background-image: url("/1639271_therese_lindroth_foto_ekaterina_lukoshkova_1_970.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 1;
   border-radius: 50%;
   transition:
     width 1s ease-in-out,
     height 1s ease-in-out,
-    border-radius 0.1s ease-in;
+    border-radius 1s ease-in;
 }
 
 .home .secondColumn {
@@ -76,23 +75,24 @@
   color: red;
 }
 
-.home .About p {
-  visibility: hidden;
-}
-
 .home .firstColumn:hover {
-  opacity: 1;
   width: 600px;
   height: 800px;
   border-radius: 0%;
 }
 .home .secondColumn:hover {
-  opacity: 1;
   width: 600px;
   height: 600px;
 }
 .home .About:hover {
   width: 200px;
-  height: 500px;
-  border-radius: 50% 50% 0% 0%;
+  height: 400px;
+  border-radius: 50% 50% 5% 5%;
+}
+
+@media (max-width: 700px) {
+  .home .Hero {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
 }
