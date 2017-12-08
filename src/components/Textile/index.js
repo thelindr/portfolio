@@ -5,7 +5,7 @@ class Textile extends React.Component {
   render() {
     return (
       <div className="TextilePage">
-        Textilepage
+        Coming soon...
       </div>
     )
   }
