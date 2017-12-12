@@ -1,7 +1,10 @@
 import React from "react"
+import projects from "./data/projects.js"
+import Projectpreview from "./projectsPreview/index.js"
 import "./style.css"
 
 class Projects extends React.Component {
+
   render() {
     return (
       <div className="Projects">
@@ -10,10 +13,11 @@ class Projects extends React.Component {
         </div>
         <div className="Container">
           <div className="ProjectCard">
-            <p>projectcard</p>
-          </div>
-          <div className="ProjectCard">
-            <p>projectcard</p>
+            {projects.map(project => (
+              <Projectpreview
+                name={project.name}
+                description={project.description} />
+            ))}
           </div>
         </div>
       </div>

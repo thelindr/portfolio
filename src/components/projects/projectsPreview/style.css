@@ -1,0 +1,20 @@
+.inner {
+  /*display: flex;
+  flex-direction: column;*/
+  background-color: white;
+  margin: 20px;
+  text-decoration: none;
+}
+
+.inner .container {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.inner h2 {
+  font-family: Calibri;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: black;
+}

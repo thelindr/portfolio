@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 
-h1 {
+.Projects h1 {
     font-family: Calibri;
     color: #f3aea1;
     letter-spacing: 2px;
@@ -32,7 +32,10 @@ h1 {
 }
 
 .Projects .ProjectCard {
-  width: 40%;
-  height: 300px;
+  /*display: flex;
+  flex-direction: row;
+  justify-content: space-between;*/
+  width: 80%;
+  height: auto;
   background-color: grey;
 }
