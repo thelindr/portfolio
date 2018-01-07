@@ -91,7 +91,7 @@
   border-radius: 50% 50% 5% 5%;
 }
 
-@media (max-width: 770px) {
+@media (min-width: 0px) and (max-width: 770px) {
   .home .Hero {
     display: flex;
     flex-direction: column-reverse;

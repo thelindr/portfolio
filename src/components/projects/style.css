@@ -1,41 +1,66 @@
 .Projects {
   display: flex;
   flex-direction: column;
+  animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
 }
 
 .Projects h1 {
     font-family: Calibri;
-    color: #f3aea1;
+    color: white;
     letter-spacing: 2px;
+    font-size: 50px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
 }
 
 .Projects .Header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
   height: 200px;
-  background: #247339;
   margin: auto;
-  border-radius: 0% 0% 50% 50%;
 }
 
 .Projects .Container {
   width: 80%;
   margin: auto;
   margin-top: 20px;
-  background-color: pink;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
 }
 
-.Projects .ProjectCard {
-  /*display: flex;
-  flex-direction: row;
-  justify-content: space-between;*/
-  width: 80%;
-  height: auto;
-  background-color: grey;
+@media(max-width: 1000px) {
+  .Projects .Container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media(max-width: 800px) {
+  .Projects .Container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media(max-width: 600px) {
+  .Projects .Container {
+    grid-template-columns: 1fr 1fr;
+  }
 }

@@ -1,6 +1,6 @@
 import React from "react"
 import projects from "./data/projects.js"
-import Projectpreview from "./projectsPreview/index.js"
+import ProjectPreview from "./projectsPreview/index.js"
 import "./style.css"
 
 class Projects extends React.Component {
@@ -9,16 +9,17 @@ class Projects extends React.Component {
     return (
       <div className="Projects">
         <div className="Header">
-          <h1>Web development projects</h1>
+          <h1>Web Development Projects</h1>
         </div>
         <div className="Container">
-          <div className="ProjectCard">
-            {projects.map(project => (
-              <Projectpreview
-                name={project.name}
-                description={project.description} />
-            ))}
-          </div>
+          {projects.map(project => (
+
+            <ProjectPreview
+              name={project.name}
+              description={project.description}
+              url={project.url} />
+          ))}
+
         </div>
       </div>
     )
