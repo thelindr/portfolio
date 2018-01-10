@@ -82,15 +82,41 @@
   border-radius: 0%;
 }
 .home .secondColumn:hover {
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
 }
 .home .About:hover {
   width: 200px;
   height: 400px;
   border-radius: 50% 50% 5% 5%;
 }
-
+@media (min-width: 770px) and (max-width: 1000px) {
+  .home .firstColumn {
+    width: 200px;
+    height: 200px;
+  }
+  .home .firstColumn:hover {
+    width: 300px;
+    height: 400px;
+    border-radius: 0%;
+  }
+  .home .secondColumn {
+    width: 200px;
+    height: 200px;
+  }
+  .home .secondColumn:hover {
+    width: 300px;
+    height: 300px;
+  }
+  .home .About {
+    width: 100px;
+    height: 100px;
+  }
+  .home .About:hover {
+    width: 180px;
+    height: 200px;
+  }
+}
 @media (min-width: 0px) and (max-width: 770px) {
   .home .Hero {
     display: flex;

@@ -4,27 +4,18 @@ export default [
     name: "Yearbook",
     description: "Build a Yearbook using floats",
     language: "Html, Css",
-    img: "/hero.png",
-    url: "yearbook"
+    img: "/hero.png"
   },
   {
     id: "hero",
     name: "Hero",
     description: "Create a responsive hero banner",
-    language: "Html, Css",
-    url: "hero"
+    language: "Html, Css"
   },
   {
     id: "radio-player",
     name: "Radio Player",
     description: "A radio player using the Sveriges Radio API",
-    language: "React",
-    url: "radio-player"
-  },
-  {
-    id: "todo-list",
-    name: "ToDo List",
-    description: "A simple to do list app",
     language: "React"
   },
   {
@@ -32,15 +23,19 @@ export default [
     name: "Yearbook",
     description: "Build a Yearbook using floats",
     language: "Html, Css",
-    img: "/hero.png",
-    url: "yearbook"
+    img: "/hero.png"
   },
   {
     id: "yearbook",
     name: "Yearbook",
     description: "Build a Yearbook using floats",
     language: "Html, Css",
-    img: "/hero.png",
-    url: "yearbook"
+    img: "/hero.png"
+  },
+  {
+    id: "todo-list",
+    name: "Todo List",
+    description: "A to do list app built using React",
+    language: "React"
   }
 ]

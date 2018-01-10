@@ -16,8 +16,8 @@
 .projectCard .front {
   border-radius: 50%;
   border-style: outset;
-  border-width: 1px;
-  border-color: red;
+  border-width: 2px;
+  border-color: #ff9900;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,11 +26,6 @@
   height: 100%;
   position: absolute;
   backface-visibility: hidden;
-  /* background-color: white;
-  border-radius: 50%;
-  border-style: outset;
-  border-width: 1px;
-  border-color: red; */
 }
 
 .projectCard:hover {
@@ -59,6 +54,7 @@
   border-style: outset;
   border-width: 1px;
   border-color: green;
+  background-color: lightblue;
   display: flex;
   flex-direction: column;
   align-items: center;

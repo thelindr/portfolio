@@ -15,9 +15,11 @@ class Projects extends React.Component {
           {projects.map(project => (
 
             <ProjectPreview
+              key={project.id}
               name={project.name}
               description={project.description}
-              url={project.url} />
+              url={project.id}
+              link={project.link} />
           ))}
 
         </div>
