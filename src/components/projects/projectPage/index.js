@@ -18,7 +18,6 @@ export default class ProjectPage extends React.Component {
   }
 
   setProject = (project) => {
-    // if no project, redirect to a "not found" page
     this.setState({
       project
     })
@@ -32,6 +31,7 @@ export default class ProjectPage extends React.Component {
         <div className="description">
           {this.state.project.description}
         </div>
+
       </div>
     )
   }

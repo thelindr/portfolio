@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import "./style.css"
 
 export default class ProjectPreview extends React.Component {
@@ -8,15 +7,15 @@ export default class ProjectPreview extends React.Component {
     return (
       <div className="card-wrapper">
         <div className="projectCard">
-          <Link to={`/projects/${this.props.url}`} style={{ textDecoration: "none" }}>
-            <div className="front">
+          <a href={this.props.site}>
+            <div className="front" style={{ borderColor: this.props.color }}>
               <h2>{this.props.name}</h2>
 
-              <div className="back">
+              <div className="back" style={{ borderColor: this.props.color }}>
                 <p>{this.props.description}</p>
               </div>
             </div>
-          </Link>
+          </a>
         </div>
       </div>
     )

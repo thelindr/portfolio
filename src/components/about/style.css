@@ -1,0 +1,79 @@
+.Aboutpage {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+.Aboutpage .navigate {
+  width: 50%;
+  margin-top: 50px;
+}
+
+.Aboutpage .navigationBar .aboutLink {
+  display: none;
+}
+
+.Aboutpage h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.Aboutpage h3 {
+  letter-spacing: 1px;
+}
+
+.Aboutpage p {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.Aboutpage .placeHolder {
+  width: 50%;
+}
+
+.Aboutpage .footer {
+  width: 50%;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 0px) and (max-width: 800px) {
+
+  .Aboutpage {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .Aboutpage .navigate {
+    width: 80%;
+    margin-top: 20px;
+  }
+  .Aboutpage .placeHolder {
+    margin: auto;
+  }
+  .Aboutpage .footer {
+    width: 100%;
+    margin-top: 10vh;
+    justify-content: space-around;
+  }
+
+}
