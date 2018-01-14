@@ -47,19 +47,19 @@
   justify-items: center;
 }
 
-@media (min-width: 800px) and (max-width: 1000px) {
+@media (max-width: 1000px) and (min-width: 801px) {
   .Projects .Container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 601px)  {
   .Projects .Container {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-@media (min-width: 0px) and (max-width: 600px) {
+@media (max-width: 600px) and (min-width: 0px) {
   .Projects .Container {
     grid-template-columns: 1fr 1fr;
   }
