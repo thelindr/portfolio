@@ -4,10 +4,7 @@
 }
 
 .home a {
-  margin: 0px;
-  margin-top: 20%;
   color: #0f2581;
-  font-family: Calibri;
   font-size: 40px;
   text-decoration: none;
   letter-spacing: 2px;
@@ -27,6 +24,7 @@
   display: flex;
   justify-content: center;
   align-content: space-around;
+  align-items: center;
   width: 53vh;
   height: 53vh;
   background-image: url("/1639271_therese_lindroth_foto_ekaterina_lukoshkova_1_970.jpg");
