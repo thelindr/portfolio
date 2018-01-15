@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter, Route } from "react-router-dom"
+import { HashRouter, Route } from "react-router-dom"
 import Home from "./home"
 import About from "./about"
 import Projects from "./projects"
@@ -10,7 +10,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <div>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
@@ -18,7 +18,7 @@ class App extends React.Component {
           <Route path="/textile" component={Textile} />
           {/* <Route path="/projects/:id" component={ProjectPage} /> */}
         </div>
-      </BrowserRouter>
+      </HashRouter>
 
     )
   }

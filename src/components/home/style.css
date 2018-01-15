@@ -3,6 +3,20 @@
   height: 100vh;
 }
 
+.home #footer {
+  font-family: arial;
+  font-size: 12px;
+  font-weight: lighter;
+  color: #9a9a9a;
+}
+
+.home .homeFoot {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #d9daffad;
+}
+
 .home a {
   color: #0f2581;
   font-size: 40px;

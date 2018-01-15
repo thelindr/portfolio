@@ -17,6 +17,9 @@ class Home extends React.Component {
             <a><Link to="/projects">Web Projects</Link></a>
           </div>
         </div>
+        <div className="homeFoot">
+          <h1 id="footer">©Therese Lindroth</h1>
+        </div>
       </div>
     )
   }
