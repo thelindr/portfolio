@@ -18,8 +18,10 @@ class Projects extends React.Component {
 
             <ProjectPreview
               key={project.id}
+              url={project.id}
               name={project.name}
               description={project.description}
+              imageURL={project.imageURL}
               site={project.site}
               color={project.color} />
           ))}

@@ -1,5 +1,12 @@
-.textile .TextilePage {
+.TextilePage {
   background: white;
+  width: 800px;
+  height: 800px;
+}
+
+.TextilePage .gif {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  background-image: url("Untitled1.gif");
+  background-repeat: no-repeat;
 }

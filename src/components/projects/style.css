@@ -2,7 +2,10 @@
   display: flex;
   flex-direction: column;
   animation: fadein 2s;
+  margin-bottom: 50px;
+  background-color: #d6dcd326;
 }
+
 @keyframes fadein {
   from {
     opacity:0;
@@ -24,8 +27,8 @@
     font-family: Calibri;
     color: #ffffff;
     letter-spacing: 2px;
-    font-size: 50px;
-    -webkit-text-stroke-width: 2px;
+    font-size: 35px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #000000;
 }
 
@@ -34,7 +37,7 @@
   justify-content: center;
   align-items: center;
   width: 80%;
-  height: 200px;
+  height: 150px;
   margin: auto;
 }
 
@@ -43,25 +46,27 @@
   margin: auto;
   margin-top: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  justify-items: center;
+  align-content: space-between;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 250px 250px;
+  justify-content: center;
 }
 
 @media (max-width: 1000px) and (min-width: 801px) {
-  .Projects .Container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-
-@media (max-width: 800px) and (min-width: 601px)  {
   .Projects .Container {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-@media (max-width: 600px) and (min-width: 0px) {
+@media (max-width: 800px) and (min-width: 601px)  {
   .Projects .Container {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 0px) {
+  .Projects .Container {
+    grid-template-columns: 1fr;
     width: 100%;
   }
 

@@ -1,35 +1,35 @@
 .navigationBar {
-  width: 50%;
-  height: 100px;
+  width: 25%;
+  height: 50px;
   margin: auto;
   display: flex;
   justify-content: space-around;
 }
 
 .navigationBar .linkHolder {
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
 }
 
 .navigationBar .githubLogo {
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   background-image: url("GitHub-Mark-120px-plus.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .navigationBar .homeLink {
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   background-image: url("588a6758d06f6719692a2d22.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .navigationBar .aboutLink {
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   background-image: url("info-64.png");
   background-size: contain;
   background-repeat: no-repeat;

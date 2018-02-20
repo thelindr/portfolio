@@ -1,74 +1,38 @@
 .card-wrapper {
-  perspective:800px;
-}
-
-.projectCard {
-  margin: 10px;
-  position: relative;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  -webkit-transition: transform 1.5s;
-  -moz-transition: transform 1.5s;
-  transition: transform 1.5s;
-  transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-}
-
-.projectCard .front {
-  border-radius: 50%;
-  border-style: outset;
-  border-width: 2px;
+  /* perspective: 1000px; */
+  width: 200px;
+  height: 200px;
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 100%;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  background-color: white;
+  overflow: hidden;
+}
+
+.card-wrapper h2 {
+  display: none;
   position: absolute;
-  backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-}
-
-.projectCard:hover {
-  -ms-transform: rotateY(-180deg);
-  -webkit-transform: rotateY(-180deg);
-  -moz-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-}
-
-.projectCard h2 {
-  font-size: 18px;
-  letter-spacing: 2px;
   text-decoration: none;
   color: black;
+  margin: 0px;
 }
 
-.projectCard p {
-  text-decoration: none;
-  margin: 5px;
-  color: black;
+.card-wrapper:hover h2 {
+  display: block;
 }
 
-.projectCard .back {
-  border-radius: 50%;
-  border-style: outset;
-  border-width: 2px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-transform: rotateY(-180deg);
-  -webkit-transform: rotateY(-180deg);
-  -moz-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
+.card-wrapper:hover {
+  background: #c5c5c5;
+}
+
+.card-wrapper:hover img {
+  opacity: 0.5;
+}
+
+.card-wrapper img {
+  width: 200px;
+  margin: auto;
 }
