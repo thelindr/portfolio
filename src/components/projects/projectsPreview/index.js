@@ -6,12 +6,14 @@ export default class ProjectPreview extends React.Component {
 
   render() {
     return (
-      <Link to={`/projects/${this.props.url}`}>
-        <div className="card-wrapper">
-          <img src={this.props.imageURL} alt="" />
-          <h2>{this.props.name}</h2>
-        </div>
-      </Link>
+      <div>
+        <Link to={`/projects/${this.props.url}`}>
+          <div className="card-wrapper">
+            <img src={this.props.imageURL} alt="" />
+            <h2>{this.props.name}</h2>
+          </div>
+        </Link>
+      </div>
     )
   }
 

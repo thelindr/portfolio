@@ -18,6 +18,33 @@ export default [
     color: "#7d4cd4"
   },
   {
+    id: "todo-list",
+    name: "Todo List",
+    description: "A to do list app built using React",
+    language: "React",
+    site: "https://thelindr.github.io/ToDo-App/",
+    imageURL: "/todoapp.png",
+    color: "#e2e2e238"
+  },
+  {
+    id: "radio-player",
+    name: "Radio Player",
+    description: "A radio player using the Sveriges Radio API",
+    language: "React",
+    site: "http://confident-noether-2c32a4.netlify.com",
+    imageURL: "/radio.png",
+    color: "#ff9900"
+  },
+  {
+    id: "supergoal-app",
+    name: "Supergoal App",
+    description: "A habit tracker app for kids",
+    language: "React",
+    site: "https://cocky-easley-3df93a.netlify.com/",
+    imageURL: "/supergoal.png",
+    color: "#3f51b5"
+  },
+  {
     id: "signupform",
     name: "Signup-Form",
     description: "Simple signupform",
@@ -44,24 +71,6 @@ export default [
   //   color: "#ff9900"
   // },
   {
-    id: "radio-player",
-    name: "Radio Player",
-    description: "A radio player using the Sveriges Radio API",
-    language: "React",
-    site: "http://confident-noether-2c32a4.netlify.com",
-    imageURL: "/radio.png",
-    color: "#ff9900"
-  },
-  {
-    id: "todo-list",
-    name: "Todo List",
-    description: "A to do list app built using React",
-    language: "React",
-    site: "https://thelindr.github.io/ToDo-App/",
-    imageURL: "/todoapp.png",
-    color: "#e2e2e238"
-  },
-  {
     id: "clock",
     name: "Clock",
     description: "Clock that you can pause and restart",
@@ -86,15 +95,6 @@ export default [
     language: "React",
     site: "https://unruffled-ptolemy-c4a222.netlify.com",
     imageURL: "/onlinestore.png",
-    color: "#3f51b5"
-  },
-  {
-    id: "supergoal-app",
-    name: "Supergoal App",
-    description: "A habit tracker app for kids",
-    language: "React",
-    site: "https://cocky-easley-3df93a.netlify.com/",
-    imageURL: "/supergoal.png",
     color: "#3f51b5"
   }
 ]

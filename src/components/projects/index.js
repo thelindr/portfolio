@@ -6,24 +6,54 @@ import "./style.css"
 
 class Projects extends React.Component {
 
+  constructor(props) {
+    super(props)
+    this.state = {
+      allProjects: []
+    }
+  }
+
+  componentDidMount() {
+    this.setProject()
+  }
+
+  setProject = () => {
+    this.setState({
+      allProjects: projects
+    })
+  }
+
+  filterProjects = (event) => {
+    const filteredProjects = this.state.allProjects.filter((allProjects =>
+      allProjects.language === event.target.getAttribute("value")))
+    this.setState({
+      allProjects: filteredProjects
+    })
+  }
+
   render() {
+    console.log(this.state.allProjects)
     return (
       <div className="Projects">
         <div className="Header">
           <h1>Web Development Projects</h1>
         </div>
         <Navigation />
+        <button onClick={this.filterProjects} value="React">React Projects</button>
+        <button onClick={this.setProject}>All Projects</button>
         <div className="Container">
-          {projects.map(project => (
+          {this.state.allProjects.map(allProjects => (
 
             <ProjectPreview
-              key={project.id}
-              url={project.id}
-              name={project.name}
-              description={project.description}
-              imageURL={project.imageURL}
-              site={project.site}
-              color={project.color} />
+              projects={allProjects}
+              key={allProjects.id}
+              url={allProjects.id}
+              name={allProjects.name}
+              description={allProjects.description}
+              imageURL={allProjects.imageURL}
+              site={allProjects.site}
+              language={allProjects.language}
+              color={allProjects.color} />
           ))}
 
         </div>

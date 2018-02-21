@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   animation: fadein 2s;
-  margin-bottom: 50px;
-  background-color: #d6dcd326;
 }
 
 @keyframes fadein {
