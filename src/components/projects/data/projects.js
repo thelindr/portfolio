@@ -15,6 +15,7 @@ export default [
     language: "React",
     site: "https://cocky-easley-3df93a.netlify.com/",
     imageURL: "/isolog.png",
+    type: "individual",
     color: "#7d4cd4"
   },
   {
@@ -24,6 +25,7 @@ export default [
     language: "React",
     site: "https://thelindr.github.io/ToDo-App/",
     imageURL: "/todoapp.png",
+    type: "individual",
     color: "#e2e2e238"
   },
   {
@@ -33,6 +35,7 @@ export default [
     language: "React",
     site: "http://confident-noether-2c32a4.netlify.com",
     imageURL: "/radio.png",
+    type: "individual",
     color: "#ff9900"
   },
   {
@@ -42,6 +45,7 @@ export default [
     language: "React",
     site: "https://cocky-easley-3df93a.netlify.com/",
     imageURL: "/supergoal.png",
+    type: "team",
     color: "#3f51b5"
   },
   {
@@ -51,6 +55,7 @@ export default [
     language: "Html, Css",
     site: "https://thelindr.github.io/SignupForm/",
     imageURL: "/signup.png",
+    type: "individual",
     color: "#ff1100"
   },
   // {
@@ -77,6 +82,7 @@ export default [
     language: "React",
     site: "http://relaxed-wilson-54e373.netlify.com",
     imageURL: "/clock.png",
+    type: "individual",
     color: "#ff9900"
   },
   {
@@ -86,6 +92,7 @@ export default [
     language: "React",
     site: "https://adventcalendar-technigo.netlify.com",
     imageURL: "/adventcalendar.png",
+    type: "team",
     color: "#3f51b5"
   },
   {
@@ -95,6 +102,7 @@ export default [
     language: "React",
     site: "https://unruffled-ptolemy-c4a222.netlify.com",
     imageURL: "/onlinestore.png",
+    type: "team",
     color: "#3f51b5"
   }
 ]

@@ -1,4 +1,5 @@
 import React from "react"
+import FlipMove from "react-flip-move"
 import projects from "./data/projects.js"
 import ProjectPreview from "./projectsPreview/index.js"
 import Navigation from "./navigation/index.js"
@@ -24,8 +25,8 @@ class Projects extends React.Component {
   }
 
   filterProjects = (event) => {
-    const filteredProjects = this.state.allProjects.filter((allProjects =>
-      allProjects.language === event.target.getAttribute("value")))
+    const filteredProjects = projects.filter((projects =>
+      projects.type === event.target.getAttribute("value")))
     this.setState({
       allProjects: filteredProjects
     })
@@ -39,9 +40,10 @@ class Projects extends React.Component {
           <h1>Web Development Projects</h1>
         </div>
         <Navigation />
-        <button onClick={this.filterProjects} value="React">React Projects</button>
+        <button onClick={this.filterProjects} value="team">Team Projects</button>
+        <button onClick={this.filterProjects} value="individual">Individual Projects</button>
         <button onClick={this.setProject}>All Projects</button>
-        <div className="Container">
+        <FlipMove className="Container" duration={500} easing="ease-in-out">
           {this.state.allProjects.map(allProjects => (
 
             <ProjectPreview
@@ -55,8 +57,7 @@ class Projects extends React.Component {
               language={allProjects.language}
               color={allProjects.color} />
           ))}
-
-        </div>
+        </FlipMove>
       </div>
     )
   }

@@ -50,6 +50,12 @@
   justify-content: center;
 }
 
+.Projects button {
+  background-color: blue;
+  width: 100px;
+  border: none;
+}
+
 @media (max-width: 1000px) and (min-width: 801px) {
   .Projects .Container {
     grid-template-columns: 1fr 1fr 1fr;
