@@ -10,7 +10,8 @@ class Projects extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      allProjects: []
+      allProjects: [],
+      activeButton: "all"
     }
   }
 
@@ -20,29 +21,53 @@ class Projects extends React.Component {
 
   setProject = () => {
     this.setState({
-      allProjects: projects
+      allProjects: projects,
+      activeButton: "all"
     })
   }
 
   filterProjects = (event) => {
+    const buttonValue = event.target.getAttribute("value")
     const filteredProjects = projects.filter((projects =>
-      projects.type === event.target.getAttribute("value")))
+      projects.type === buttonValue))
     this.setState({
-      allProjects: filteredProjects
+      allProjects: filteredProjects,
+      activeButton: buttonValue
     })
   }
 
   render() {
-    console.log(this.state.allProjects)
+    const activeColor = "#8080800d"
+    const inactiveColor = "#80808075"
     return (
       <div className="Projects">
+
         <div className="Header">
           <h1>Web Development Projects</h1>
         </div>
+
         <Navigation />
-        <button onClick={this.filterProjects} value="team">Team Projects</button>
-        <button onClick={this.filterProjects} value="individual">Individual Projects</button>
-        <button onClick={this.setProject}>All Projects</button>
+
+        <div className="filterButtons">
+          <button
+            style={{ backgroundColor: `${this.state.activeButton === "all" ? activeColor : inactiveColor}` }}
+            onClick={this.setProject}>
+            All Projects
+          </button>
+          <button
+            style={{ backgroundColor: `${this.state.activeButton === "team" ? activeColor : inactiveColor}` }}
+            onClick={this.filterProjects}
+            value="team">
+            Team Projects
+          </button>
+          <button
+            style={{ backgroundColor: `${this.state.activeButton === "individual" ? activeColor : inactiveColor}` }}
+            onClick={this.filterProjects}
+            value="individual">
+            Individual Projects
+          </button>
+        </div>
+
         <FlipMove className="Container" duration={500} easing="ease-in-out">
           {this.state.allProjects.map(allProjects => (
 
@@ -58,6 +83,7 @@ class Projects extends React.Component {
               color={allProjects.color} />
           ))}
         </FlipMove>
+
       </div>
     )
   }

@@ -22,12 +22,12 @@
 }
 
 .Projects h1 {
-    font-family: Calibri;
-    color: #ffffff;
-    letter-spacing: 2px;
-    font-size: 35px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000000;
+  font-family: Calibri;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-size: 35px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
 }
 
 .Projects .Header {
@@ -35,42 +35,56 @@
   justify-content: center;
   align-items: center;
   width: 80%;
-  height: 150px;
+  height: 100px;
   margin: auto;
 }
 
 .Projects .Container {
   width: 80%;
   margin: auto;
-  margin-top: 20px;
+  padding-top: 50px;
   display: grid;
-  align-content: space-between;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 250px 250px;
+  align-content: space-around;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  grid-gap: 40px;
   justify-content: center;
+  border-top: solid 15px #8080800d;
 }
 
-.Projects button {
-  background-color: blue;
-  width: 100px;
+.Projects .filterButtons {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.Projects .filterButtons button {
+  width: 170px;
+  height: 40px;
+  margin-right: 2px;
+  padding: 0 20px 0 20px;
   border: none;
+  text-align: center;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 5px;
 }
 
 @media (max-width: 1000px) and (min-width: 801px) {
   .Projects .Container {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 200px 200px 200px;
   }
 }
 
 @media (max-width: 800px) and (min-width: 601px)  {
   .Projects .Container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 200px 200px;
   }
 }
 
 @media (max-width: 600px) and (min-width: 0px) {
   .Projects .Container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 200px;
     width: 100%;
   }
 

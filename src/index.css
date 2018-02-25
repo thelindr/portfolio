@@ -6,6 +6,21 @@ body {
   animation: fadein 2s;
 }
 
+button {
+  font-family: calibri, verdana;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
 @keyframes fadein {
   from {
     opacity:0;
