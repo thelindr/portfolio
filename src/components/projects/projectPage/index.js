@@ -36,7 +36,10 @@ export default class ProjectPage extends React.Component {
       <div className="ProjectPage" ref={(el) => { this.projectView = el }}>
 
         <div className="descriptionBox">
-          <h1>{this.state.project.name}</h1>
+          <div className="header">
+            <h1>{this.state.project.name}</h1>
+            <h4>{this.state.project.language}</h4>
+          </div>
           {this.state.project.description}
           <a href={this.state.project.site}>View demo</a>
         </div>

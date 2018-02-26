@@ -11,8 +11,8 @@ export default [
   {
     id: "isotretinoin-log",
     name: "Isotretinoin Log",
-    description: "My final project at the Technigo Bootcamp! I decided to create a calculator for a medicine called Isotretinoin, which is used to treat Acne. When going through this treatment, you're supposed to reach a cumulative dose of 120-150 mg/kg. Due to side effects, the treatment time depends on how well you tolerate the medicine, and the dose can be adjusted during the treatment. This app helps you keep track of how far you've come to your goal dose.",
-    language: "React",
+    description: "My final project at the Technigo Bootcamp. Users can create an account that stores the userdata. I decided to create a calculator for a medicine called Isotretinoin, which is used to treat Acne. When going through this treatment, you're supposed to reach a cumulative dose of 120-150 mg/kg. Due to side effects, the treatment time depends on how well you tolerate the medicine, and the dose can be adjusted during the treatment. This app helps you keep track of how far you've come to your goal dose.",
+    language: "React/ES6, MongoDB, Express",
     site: "https://cocky-easley-3df93a.netlify.com/",
     imageURL: "/isolog.png",
     type: "individual",
@@ -21,8 +21,8 @@ export default [
   {
     id: "todo-list",
     name: "Todo List",
-    description: "A to do list app built using React",
-    language: "React",
+    description: "A to do list app built with React. The inputs are saved using localstorage.",
+    language: "React/ES6",
     site: "https://thelindr.github.io/ToDo-App/",
     imageURL: "/todoapp.png",
     type: "individual",
@@ -31,8 +31,8 @@ export default [
   {
     id: "radio-player",
     name: "Radio Player",
-    description: "A radio player using the Sveriges Radio API",
-    language: "React",
+    description: "A radio player fetching info and audio from Sveriges Radio API",
+    language: "React/ES6",
     site: "http://confident-noether-2c32a4.netlify.com",
     imageURL: "/radio.png",
     type: "individual",
@@ -41,8 +41,8 @@ export default [
   {
     id: "supergoal-app",
     name: "Supergoal App",
-    description: "A habit tracker app for kids",
-    language: "React",
+    description: "In this team project we built a habit tracker app aimed at kids and their parents. The idea is that you can set up a goal and do tasks to achieve it. There is a motivational progress animation so you can see how far you've reached. Userdata is stored with localstorage.",
+    language: "React/ES6",
     site: "https://cocky-easley-3df93a.netlify.com/",
     imageURL: "/supergoal.png",
     type: "team",
@@ -51,7 +51,7 @@ export default [
   {
     id: "signupform",
     name: "Signup-Form",
-    description: "Simple signupform",
+    description: "Simple signupform that posts the data into HTTPbin, made during sprint 1 of the program.",
     language: "Html, Css",
     site: "https://thelindr.github.io/SignupForm/",
     imageURL: "/signup.png",
@@ -78,8 +78,8 @@ export default [
   {
     id: "clock",
     name: "Clock",
-    description: "Clock that you can pause and restart",
-    language: "React",
+    description: "A clock that shows the time, and you can pause it and start it again. Animates on every even second.",
+    language: "React/ES6",
     site: "http://relaxed-wilson-54e373.netlify.com",
     imageURL: "/clock.png",
     type: "individual",
@@ -88,8 +88,8 @@ export default [
   {
     id: "advent-calendar",
     name: "Advent Calendar",
-    description: "Advent Calendar made for kivra cookies",
-    language: "React",
+    description: "Team project built in sprint 2 at the Technigo Bootcamp. We were invited by Kivra to make them a classic adventcalendar with recipes for each day until christmas. For this demo the date is set to 20/12 so you can see the content of the calendar.",
+    language: "JavaScript ES6",
     site: "https://adventcalendar-technigo.netlify.com",
     imageURL: "/adventcalendar.png",
     type: "team",
@@ -98,9 +98,9 @@ export default [
   {
     id: "Online Store",
     name: "Online Store",
-    description: "Fictional online store fetching from Tictail-Api",
-    language: "React",
-    site: "https://unruffled-ptolemy-c4a222.netlify.com",
+    description: "Team project built in sprint 3 at the Technigo Bootcamp. We were invited by Tictail to use their API to make a fictional shop.",
+    language: "React/ES6",
+    site: "https://github.com/thelindr/Tictail-store",
     imageURL: "/onlinestore.png",
     type: "team",
     color: "#3f51b5"
