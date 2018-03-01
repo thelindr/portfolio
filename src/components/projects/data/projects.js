@@ -35,7 +35,7 @@ export default [
   {
     id: "radio-player",
     name: "Radio Player",
-    description: "A radio player fetching info and audio from Sveriges Radio API",
+    description: "A radio player fetching info and audio from Sveriges Radio API. You can filter the stations by search.",
     language: "React/ES6",
     site: "http://confident-noether-2c32a4.netlify.com",
     code: "https://github.com/thelindr/Radio-player",

@@ -3,14 +3,14 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-content: center;
+  justify-content: center;
   align-items: center;
+  background-color: #ffc107;
 }
 
 .TextilePage .gif {
   width: 50%;
   height: 300px;
-  margin: auto;
   background-image: url("Untitled1.gif");
   background-repeat: no-repeat;
   background-size: contain;

@@ -1,21 +1,3 @@
-@-webkit-keyframes gradientAnimation {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes gradientAnimation {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes gradientAnimation {
-    0%{background-position:0% 25%}
-    25%{background-position:0% 50%}
-    50%{background-position:100% 100%}
-    70%{background-position:100% 50%}
-    100%{background-position:0% 25%}
-}
-
 @-webkit-keyframes jump {
   0%{
 	-webkit-transform: translateY(0);
@@ -26,16 +8,16 @@
 	transform: translateY(0);
   }
   40%{
-	-webkit-transform: translateY(-30px);
-	transform: translateY(-30px);
+	-webkit-transform: translateY(-15px);
+	transform: translateY(-15px);
   }
   50%{
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
   }
   60%{
-	-webkit-transform: translateY(-15px);
-	transform: translateY(-15px);
+	-webkit-transform: translateY(-10px);
+	transform: translateY(-10px);
   }
   80%{
 	-webkit-transform: translateY(0);
@@ -55,13 +37,13 @@
 	transform: translateY(0);
   }
   40%{
-	transform: translateY(-30px);
+	transform: translateY(-15px);
   }
   50%{
 	transform: translateY(0);
   }
   60%{
-	transform: translateY(-15px);
+	transform: translateY(-10px);
   }
   80%{
 	transform: translateY(0);
@@ -74,11 +56,6 @@
 .welcomePage {
   width: 100%;
   height: 100vh;
-  /* background: linear-gradient(140deg, #f0c1c1, #eaabab, #e18a8a, #e47878);
-  background-size: 1000% 1000%;
-  animation: gradientAnimation 20s ease infinite;
-  -webkit-animation: gradientAnimation 20s ease infinite;
-  -moz-animation: gradientAnimation 20s ease infinite; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,8 +82,9 @@
 
 .welcomePage .arrowBox {
   margin-top: 200px;
-  -webkit-animation: jump 2s ease-in 0s infinite normal;
-  animation: jump 2s ease-in 0s infinite normal;
+  -webkit-animation: jump 3s ease-in 3s infinite normal;
+  animation: jump 3s ease-in 3s infinite normal;
+  animation-delay: 8s;
 }
 
 .arrowDown {
@@ -120,4 +98,15 @@
   vertical-align: top;
   width: 40px;
   transform: rotate(135deg);
+}
+
+@media (max-width: 600px) and (min-width: 0px) {
+  
+  .welcomePage .messageBox h1 {
+    font-size: 45px;
+  }
+
+  .arrowBox {
+    display: none;
+  }
 }

@@ -70,22 +70,18 @@ class Projects extends React.Component {
           </button>
         </div>
 
-        <FlipMove className="Container" duration={500} easing="ease-in-out">
-          {this.state.allProjects.map(allProjects => (
+        <div className="previewContainer">
+          <FlipMove className="Container" duration={500} easing="ease-in-out">
+            {this.state.allProjects.map(allProjects => (
 
-            <ProjectPreview
-              projects={allProjects}
-              key={allProjects.id}
-              url={allProjects.id}
-              name={allProjects.name}
-              description={allProjects.description}
-              imageURL={allProjects.imageURL}
-              thumbnail={allProjects.thumbnail}
-              site={allProjects.site}
-              language={allProjects.language}
-              color={allProjects.color} />
-          ))}
-        </FlipMove>
+              <ProjectPreview
+                key={allProjects.id}
+                url={allProjects.id}
+                name={allProjects.name}
+                thumbnail={allProjects.thumbnail} />
+            ))}
+          </FlipMove>
+        </div>
 
       </div>
     )
