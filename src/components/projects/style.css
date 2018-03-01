@@ -21,15 +21,6 @@
   }
 }
 
-.Projects h1 {
-  font-family: Calibri;
-  color: #ffffff;
-  letter-spacing: 2px;
-  font-size: 35px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #000000;
-}
-
 .Projects .Header {
   display: flex;
   justify-content: center;
@@ -46,7 +37,7 @@
   display: grid;
   align-content: space-around;
   grid-template-columns: 200px 200px 200px 200px;
-  grid-template-rows: 200px 200px 200px;
+  grid-template-rows: auto;
   grid-gap: 40px;
   justify-content: center;
   border-top: solid 15px #8080800d;

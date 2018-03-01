@@ -1,5 +1,5 @@
 .ProjectPage {
-  width: 60%;
+  width: 80%;
   height: 100vh;
   margin: auto;
   display: flex;
@@ -11,7 +11,7 @@
   height: 400px;
   margin-left: 30px;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   background-size: contain;
 }
 
@@ -21,8 +21,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 1.5em;
+}
+
+.ProjectPage .linkHolder {
+  display: flex;
+  flex-direction: column;
 }
 
 .ProjectPage a {
@@ -31,7 +36,12 @@
   color: blue;
 }
 
-@media (max-width: 1000px) and (min-width: 601px) {
+.ProjectPage h4 {
+  font-style: italic;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
   .ProjectPage {
     width: 90%;
   }

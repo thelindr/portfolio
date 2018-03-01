@@ -6,6 +6,7 @@ class Textile extends React.Component {
     return (
       <div className="TextilePage">
         <div className="gif" />
+        <p>Coming soon...</p>
       </div>
     )
   }

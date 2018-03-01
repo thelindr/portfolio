@@ -32,6 +32,7 @@ export default class ProjectPage extends React.Component {
   }
 
   render() {
+    const hasDemo = this.state.project.site
     return (
       <div className="ProjectPage" ref={(el) => { this.projectView = el }}>
 
@@ -41,7 +42,11 @@ export default class ProjectPage extends React.Component {
             <h4>{this.state.project.language}</h4>
           </div>
           {this.state.project.description}
-          <a href={this.state.project.site}>View demo</a>
+          <div className="linkHolder">
+            {hasDemo ?
+              <a href={this.state.project.site}>View Demo</a> : null}
+            <a href={this.state.project.code}>View Code</a>
+          </div>
         </div>
         <div className="imageCard" style={{ backgroundImage: `url(${this.state.project.imageURL})` }} />
 

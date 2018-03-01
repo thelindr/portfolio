@@ -2,6 +2,7 @@ import React from "react"
 import FlipMove from "react-flip-move"
 import projects from "./data/projects.js"
 import ProjectPreview from "./projectsPreview/index.js"
+import Welcome from "./welcome/index.js"
 import Navigation from "./navigation/index.js"
 import "./style.css"
 
@@ -42,9 +43,10 @@ class Projects extends React.Component {
     return (
       <div className="Projects">
 
-        <div className="Header">
+        {/* <div className="Header">
           <h1>Web Development Projects</h1>
-        </div>
+        </div> */}
+        <Welcome />
 
         <Navigation />
 
@@ -78,6 +80,7 @@ class Projects extends React.Component {
               name={allProjects.name}
               description={allProjects.description}
               imageURL={allProjects.imageURL}
+              thumbnail={allProjects.thumbnail}
               site={allProjects.site}
               language={allProjects.language}
               color={allProjects.color} />

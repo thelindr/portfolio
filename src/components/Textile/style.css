@@ -1,12 +1,18 @@
 .TextilePage {
-  background: white;
-  width: 800px;
-  height: 800px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
 .TextilePage .gif {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 300px;
+  margin: auto;
   background-image: url("Untitled1.gif");
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }

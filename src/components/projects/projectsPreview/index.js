@@ -9,7 +9,7 @@ export default class ProjectPreview extends React.Component {
       <div>
         <Link to={`/projects/${this.props.url}`}>
           <div className="card-wrapper">
-            <img src={this.props.imageURL} alt="" id={this.props.name} />
+            <img src={this.props.thumbnail} alt="" id={this.props.name} />
             <h2>{this.props.name}</h2>
           </div>
         </Link>
