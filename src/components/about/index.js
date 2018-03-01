@@ -13,9 +13,10 @@ class About extends React.Component {
         <div className="placeHolder">
           <h1>Hej!</h1>
           <p>My name is Therese and I like to create things.
-        I have been creating with textile as my medium for the last five years.
-        I recently got into creating web applications. I recently graduated from the <a href="http://www.technigo.io">Technigo Boot Camp</a>
-        in Stockholm, a fast paced program focused on Javascript.
+           I have been creating with textile as my medium for the last five years.
+           I recently got into creating web applications. I recently graduated from the
+            <a href="http://www.technigo.io"> Technigo Boot Camp </a>
+            in Stockholm, a fast paced program focused on Javascript.
           </p>
         </div>
         <div className="footer">

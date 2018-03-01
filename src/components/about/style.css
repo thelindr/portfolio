@@ -24,7 +24,6 @@
 
 .Aboutpage .navigate {
   width: 50%;
-  margin-top: 50px;
 }
 
 .Aboutpage .navigationBar .aboutLink {
@@ -42,7 +41,7 @@
 
 .Aboutpage p {
   font-size: 18px;
-  line-height: 150%;
+  line-height: 1.6;
 }
 
 .Aboutpage .placeHolder {

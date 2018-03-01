@@ -30,12 +30,19 @@
   margin: auto;
 }
 
+.Projects .projectHolder {
+  width: 100%;
+  margin: auto;
+  height: auto;
+  min-height: 95vh;
+  background-color: #8080800d;
+}
+
 .Projects .Container {
   width: 100%;
   margin: auto;
   padding-bottom: 50px;
   padding-top: 50px;
-  background-color: #8080800d;
   display: grid;
   align-content: space-around;
   grid-template-columns: 200px 200px 200px 200px;
@@ -51,6 +58,7 @@
   display: flex;
   align-items: center;
 }
+
 .Projects .filterButtons button {
   width: 170px;
   height: 40px;
@@ -60,6 +68,10 @@
   text-align: center;
   border-top-right-radius: 15px;
   border-top-left-radius: 5px;
+}
+
+.Projects .filterButtons button:hover {
+  opacity: 0.5;
 }
 
 @media (max-width: 1000px) and (min-width: 801px) {
@@ -75,9 +87,6 @@
 }
 
 @media (max-width: 600px) and (min-width: 0px) {
-  .Projects .previewContainer {
-    height: auto;
-  }
 
   .Projects .Container {
     grid-template-columns: 200px;

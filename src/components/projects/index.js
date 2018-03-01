@@ -69,17 +69,18 @@ class Projects extends React.Component {
             Individual Projects
           </button>
         </div>
+        <div className="projectHolder">
+          <FlipMove className="Container" duration={500} easing="ease-in-out">
+            {this.state.allProjects.map(allProjects => (
 
-        <FlipMove className="Container" duration={500} easing="ease-in-out">
-          {this.state.allProjects.map(allProjects => (
-
-            <ProjectPreview
-              key={allProjects.id}
-              url={allProjects.id}
-              name={allProjects.name}
-              thumbnail={allProjects.thumbnail} />
-          ))}
-        </FlipMove>
+              <ProjectPreview
+                key={allProjects.id}
+                url={allProjects.id}
+                name={allProjects.name}
+                thumbnail={allProjects.thumbnail} />
+            ))}
+          </FlipMove>
+        </div>
 
       </div>
     )

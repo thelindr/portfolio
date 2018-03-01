@@ -101,7 +101,7 @@
 }
 
 @media (max-width: 600px) and (min-width: 0px) {
-  
+
   .welcomePage .messageBox h1 {
     font-size: 45px;
   }

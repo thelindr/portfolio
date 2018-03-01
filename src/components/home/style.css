@@ -44,6 +44,7 @@
   background-image: url("/1639271_therese_lindroth_foto_ekaterina_lukoshkova_1_970.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #efc4b6;
   border-radius: 50%;
   transition:
     width 1s ease-in-out,
