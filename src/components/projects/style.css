@@ -30,12 +30,8 @@
   margin: auto;
 }
 
-.Projects .previewContainer {
-  height: 100vh;
-}
-
 .Projects .Container {
-  width: 80%;
+  width: 100%;
   margin: auto;
   padding-bottom: 50px;
   padding-top: 50px;
