@@ -8,7 +8,10 @@ class Home extends React.Component {
       <div className="home">
         <div className="Hero">
           <div className="firstColumn">
-            <a><Link to="/textile">Textile Work</Link></a>
+            <div className="textileLinkHolder">
+              <a><Link to="/textile">Textile Work</Link></a>
+            </div>
+            <img src="/1639271_therese_lindroth_foto_ekaterina_lukoshkova_1_970.jpg" alt="textileimage" />
           </div>
           <div className="About">
             <a><Link to="/about">About</Link></a>

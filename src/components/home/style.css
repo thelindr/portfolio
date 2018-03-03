@@ -35,21 +35,30 @@
 }
 
 .home .firstColumn {
-  display: flex;
-  justify-content: center;
-  align-content: space-around;
-  align-items: center;
+  overflow: hidden;
+  text-align:center;
+  position:relative;
   width: 30vw;
   height: 30vw;
-  background-image: url("/1639271_therese_lindroth_foto_ekaterina_lukoshkova_1_970.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #efc4b6;
   border-radius: 50%;
   transition:
     width 1s ease-in-out,
     height 1s ease-in-out,
     border-radius 1s ease-in;
+}
+
+.home .firstColumn img {
+  width: 100%;
+}
+
+.home .firstColumn .textileLinkHolder {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40px;
 }
 
 .home .secondColumn {
@@ -59,7 +68,6 @@
   justify-content: center;
   align-items: center;
   background-color: #247339;
-  opacity: 1;
   border-radius: 50%;
   transition:
     width 1s ease-in-out,

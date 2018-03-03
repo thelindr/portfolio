@@ -123,7 +123,7 @@ export default [
   {
     id: "Design-Brief",
     name: "Design Brief",
-    description: "Team project built in sprint 3 at the Technigo Bootcamp. We were invited by Tictail to use their API to make a fictional shop.",
+    description: "In this assignment we were given a design brief, with the goal of turning it into code and make it as close to the original as possible.",
     language: "React/ES6",
     site: "https://lucid-hugle-082568.netlify.com",
     code: "https://github.com/thelindr/design-brief",
