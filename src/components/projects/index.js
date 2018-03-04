@@ -38,32 +38,27 @@ class Projects extends React.Component {
   }
 
   render() {
-    const activeColor = "#8080800d"
-    const inactiveColor = "#80808075"
     return (
       <div className="Projects">
 
-        {/* <div className="Header">
-          <h1>Web Development Projects</h1>
-        </div> */}
         <Welcome />
 
         <Navigation />
 
         <div className="filterButtons">
           <button
-            style={{ backgroundColor: `${this.state.activeButton === "all" ? activeColor : inactiveColor}` }}
+            className={`${this.state.activeButton === "all" ? "activeButton" : "inactiveButton"}`}
             onClick={this.setProject}>
             All Projects
           </button>
           <button
-            style={{ backgroundColor: `${this.state.activeButton === "team" ? activeColor : inactiveColor}` }}
+            className={`${this.state.activeButton === "team" ? "activeButton" : "inactiveButton"}`}
             onClick={this.filterProjects}
             value="team">
             Team Projects
           </button>
           <button
-            style={{ backgroundColor: `${this.state.activeButton === "individual" ? activeColor : inactiveColor}` }}
+            className={`${this.state.activeButton === "individual" ? "activeButton" : "inactiveButton"}`}
             onClick={this.filterProjects}
             value="individual">
             Individual Projects

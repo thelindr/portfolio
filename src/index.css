@@ -21,6 +21,11 @@ button:focus {
   outline: 0;
 }
 
+@font-face {
+    font-family: Lydian;
+    src: url("/LYDIAN__.ttf");
+}
+
 @keyframes fadein {
   from {
     opacity:0;

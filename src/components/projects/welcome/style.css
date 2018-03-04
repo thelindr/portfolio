@@ -68,9 +68,11 @@
 }
 
 .welcomePage .messageBox h1 {
+  font-family: Lydian;
   letter-spacing: 4px;
-  font-size: 75px;
-  color: #ffc107;
+  font-size: 90px;
+  font-weight: 700;
+  text-transform: uppercase;
   margin: 0;
 }
 

@@ -7,7 +7,7 @@ export default class Welcome extends React.Component {
     return (
       <div className="welcomePage">
         <div className="messageBox">
-          <h1>Welcome!</h1>
+          <h1>Welcome</h1>
           <p>
             Here you will find a selection of projects
             I made as a student at the Technigo Bootcamp

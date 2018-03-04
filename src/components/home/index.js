@@ -37,7 +37,8 @@ class Home extends React.Component {
           </div>
         </div>
         <div className="homeFoot">
-          <h1 id="footer">©Therese Lindroth</h1>
+          <h1 id="footer">© 2018 Therese Lindroth </h1>
+          <h1 id="footer">Photo by Ekaterina Lukoshkova</h1>
         </div>
       </div>
     )

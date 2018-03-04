@@ -60,6 +60,8 @@
 }
 
 .Projects .filterButtons button {
+  background-color: #8080800d;
+  font-size: 14px;
   width: 170px;
   height: 40px;
   margin-right: 2px;
@@ -67,7 +69,19 @@
   border: none;
   text-align: center;
   border-top-right-radius: 15px;
-  border-top-left-radius: 5px;
+  border-top-left-radius: 15px;
+}
+
+.Projects .filterButtons .activeButton {
+  background-color: #8080800d;
+  font-weight: 700;
+  border-top: 2px solid #f3a433;
+}
+
+.Projects .filterButtons .inactiveButton {
+  background-color: #80808075;
+  font-weight: 300;
+  font-style: italic;
 }
 
 .Projects .filterButtons button:hover {
