@@ -19,7 +19,7 @@ class Home extends React.Component {
     return (
       <div className="home">
         <div className="Hero">
-          <div className="firstColumn">
+          <div className="firstColumn" style={{ overflow: "hidden" }}>
             <div className="textileLinkHolder">
               <a><Link to="/textile">Textile Work</Link></a>
             </div>

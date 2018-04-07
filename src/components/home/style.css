@@ -38,7 +38,6 @@
 }
 
 .home .firstColumn {
-  overflow: hidden;
   text-align: center;
   position: relative;
   background-color: #f4cfc4;
@@ -52,7 +51,7 @@
 }
 
 .home .firstColumn img {
-  width: 100%;
+  max-width: 100%;
   z-index: 0;
   transition: opacity 1s ease 2s;
 }
