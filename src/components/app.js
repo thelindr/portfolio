@@ -5,6 +5,7 @@ import About from "./about"
 import Projects from "./projects"
 import ProjectPage from "./projects/projectPage/index.js"
 import Textile from "./textile"
+import textileProjectPage from "./textile/textileProjectPage/index.js"
 
 class App extends React.Component {
 
@@ -17,6 +18,7 @@ class App extends React.Component {
           <Route path="/projects" component={Projects} />
           <Route path="/projects/:id" component={ProjectPage} />
           <Route path="/textile" component={Textile} />
+          <Route path="/textile/:id" component={textileProjectPage} />
         </div>
       </HashRouter>
 
