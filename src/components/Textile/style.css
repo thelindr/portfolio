@@ -10,7 +10,7 @@
   float: right;
   margin: auto;
   margin-right: 50px;
-  margin-top: 10px;
+  margin-top: 1vw;
   -webkit-column-count: 4; /* Chrome, Safari, Opera */
   -moz-column-count: 4; /* Firefox */
   column-count: 4;
