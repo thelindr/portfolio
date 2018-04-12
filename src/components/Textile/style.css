@@ -14,7 +14,7 @@
   -webkit-column-count: 4; /* Chrome, Safari, Opera */
   -moz-column-count: 4; /* Firefox */
   column-count: 4;
-  column-gap: 0px;
+  column-gap: 3px;
 }
 
 .textilePage .columnBox a {
@@ -23,7 +23,6 @@
 
 .textilePage .columnBox .imageCard {
   width: 100%;
-  padding-left: 3px;
 }
 
 .columnBox img {
