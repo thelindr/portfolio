@@ -17,7 +17,8 @@ export default [
   },
   {
     id: "Test",
-    firstimage: "/textileimages/P5182903-min.JPG"
+    firstimage: "/textileimages/P5182903-min.JPG",
+    secondimage: "/textileimages/testweb.JPG"
   },
   {
     id: "Project",
@@ -25,10 +26,6 @@ export default [
     secondimage: "/textileimages/project2web.jpg",
     thirdimage: "/textileimages/project3web.jpg",
     fourthimage: "/textileimages/project4web.jpg"
-  },
-  {
-    id: "Kassler",
-    firstimage: "/textileimages/testweb.JPG"
   }
 
 ]

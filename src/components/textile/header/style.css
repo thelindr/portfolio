@@ -1,8 +1,7 @@
 .textileHeader {
   position: fixed;
-  width: 100vw;
-  height: 50px;
-  padding-left: 50px;
+  width: 15vw;
+  text-align: center;
 }
 
 .textileHeader h1 {
@@ -13,6 +12,10 @@
   color: black;
 }
 
-.textileHeader h1:hover {
-  font-style: italic;
+@media (max-width: 600px) and (min-width: 0px)  {
+  .textileHeader {
+    position: fixed;
+    width: 100vw;
+    padding: 0;
+  }
 }

@@ -17,7 +17,7 @@ class App extends React.Component {
           <Route path="/about" component={About} />
           <Route path="/projects" component={Projects} />
           <Route path="/projects/:id" component={ProjectPage} />
-          <Route path="/textile" component={Textile} />
+          <Route exact path="/textile" component={Textile} />
           <Route path="/textile/:id" component={textileProjectPage} />
         </div>
       </HashRouter>

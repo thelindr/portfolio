@@ -1,12 +1,12 @@
 .textilePage {
   width: 100vw;
-  display: block;
   margin: 0;
   min-height: 100vh;
 }
 
 .textilePage .columnBox {
   width: 80vw;
+  box-sizing: border-box;
   float: right;
   margin: auto;
   margin-right: 50px;
@@ -23,11 +23,13 @@
 
 .textilePage .columnBox .imageCard {
   width: 100%;
+  background: radial-gradient(circle, white, #ffc0c094, white, white, white);
 }
 
 .columnBox img {
   max-width: 100%;
   max-height: 100%;
+  transition: opacity 1s ease 2s;
 }
 
 @media (max-width: 900px) and (min-width: 601px) {
@@ -42,8 +44,10 @@
 @media (max-width: 600px) and (min-width: 0px)  {
 
   .textilePage .columnBox {
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
+    width: 100vw;
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+    margin: auto;
   }
 }

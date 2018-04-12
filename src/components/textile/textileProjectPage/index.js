@@ -1,5 +1,6 @@
 import React from "react"
 import projects from "../data/textileprojects"
+import TextileHeader from "../header/index.js"
 import "./style.css"
 
 export default class textileProjectPage extends React.Component {
@@ -28,17 +29,14 @@ export default class textileProjectPage extends React.Component {
     this.setState({
       project
     })
-    this.projectView.scrollIntoView({ behavior: "smooth" })
   }
 
   render() {
     return (
       <div className="textileProjectPage">
+        <TextileHeader />
 
-        <img
-          src={this.state.project.firstimage}
-          alt={this.state.project.id}
-          ref={(el) => { this.projectView = el }} />
+        <img src={this.state.project.firstimage} alt={this.state.project.id} />
         {this.state.project.secondimage &&
           <img src={this.state.project.secondimage} alt={this.state.project.id} />}
         {this.state.project.thirdimage &&

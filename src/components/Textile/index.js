@@ -6,6 +6,13 @@ import "./style.css"
 
 class Textile extends React.Component {
 
+  constructor(props) {
+    super(props)
+    this.state = {
+      imageLoaded: false
+    }
+  }
+
   render() {
     return (
       <div>
@@ -18,10 +25,16 @@ class Textile extends React.Component {
                   <Link to={`/textile/${project.id}`}>
                     <div className="imageCard">
                       <img
+                        onLoad={() => this.setState({ imageLoaded: "true" })}
+                        style={this.state.imageLoaded ? { opacity: 1 } : { opacity: 0 }}
                         id={project.id}
                         src={project.firstimage}
                         alt="projectimage" />
+                    </div>
+                    <div className="imageCard">
                       <img
+                        onLoad={() => this.setState({ imageLoaded: "true" })}
+                        style={this.state.imageLoaded ? { opacity: 1 } : { opacity: 0 }}
                         id={project.id}
                         src={project.secondimage}
                         alt="projectimage" />
@@ -33,6 +46,8 @@ class Textile extends React.Component {
                   <Link to={`/textile/${project.id}`}>
                     <div className="imageCard">
                       <img
+                        onLoad={() => this.setState({ imageLoaded: "true" })}
+                        style={this.state.imageLoaded ? { opacity: 1 } : { opacity: 0 }}
                         id={project.id}
                         src={project.firstimage}
                         alt="projectimage" />
