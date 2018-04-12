@@ -1,29 +1,50 @@
-.TextilePage {
-  width: 90vw;
-  height: 100vh;
+.textilePage {
+  width: 100vw;
+  display: block;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.textilePage .columnBox {
+  width: 80vw;
+  float: right;
   margin: auto;
-  margin-top: 100px;
-  -webkit-column-count: 5; /* Chrome, Safari, Opera */
-  -moz-column-count: 5; /* Firefox */
-  column-count: 5;
+  margin-right: 50px;
+  margin-top: 10px;
+  -webkit-column-count: 4; /* Chrome, Safari, Opera */
+  -moz-column-count: 4; /* Firefox */
+  column-count: 4;
   column-gap: 0px;
 }
 
-.TextilePage a {
+.textilePage .columnBox a {
   margin: 0px;
 }
 
-.TextilePage .marginTop {
-  width: 100vw;
-  margin-bottom: 100px;
-}
-
-.TextilePage .imageCard {
+.textilePage .columnBox .imageCard {
   width: 100%;
   padding-left: 3px;
 }
 
-.TextilePage img {
+.columnBox img {
   max-width: 100%;
   max-height: 100%;
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+
+  .textilePage .columnBox {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 0px)  {
+
+  .textilePage .columnBox {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+  }
 }

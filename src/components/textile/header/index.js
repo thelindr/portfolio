@@ -6,7 +6,9 @@ class TextileHeader extends React.Component {
   render() {
     return (
       <div className="textileHeader">
-        <h1>Therese Lindroth</h1>
+        <Link to="/textile" style={{ textDecoration: "none" }}>
+          <h1>Therese Lindroth</h1>
+        </Link>
       </div>
     )
   }
