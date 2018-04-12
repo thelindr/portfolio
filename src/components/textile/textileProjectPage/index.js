@@ -32,10 +32,19 @@ export default class textileProjectPage extends React.Component {
   }
 
   render() {
+    const hasSecondImage = this.state.project.secondimage
+    const hasThirdImage = this.state.project.thirdimage
+    const hasFourthImage = this.state.project.fourthimage
     return (
-      <div className="ProjectPage" ref={(el) => { this.projectView = el }}>
+      <div className="textileProjectPage" ref={(el) => { this.projectView = el }}>
 
-        <h1>{this.state.project.id}</h1>
+        <img src={this.state.project.firstimage} alt={this.state.project.id} />
+        {hasSecondImage &&
+          <img src={this.state.project.secondimage} alt={this.state.project.id} />}
+        {hasThirdImage &&
+          <img src={this.state.project.thirdimage} alt="projectimage" />}
+        {hasFourthImage &&
+            <img src={this.state.project.fourthimage} alt="projectimage" />}
 
       </div>
     )

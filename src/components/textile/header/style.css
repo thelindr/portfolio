@@ -1,0 +1,11 @@
+.textileHeader {
+  position: fixed;
+  width: 100vw;
+  height: 100px;
+}
+
+.textileHeader h1 {
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
